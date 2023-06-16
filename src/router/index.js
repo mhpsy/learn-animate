@@ -25,8 +25,34 @@ const router = createRouter({
         {
             path: '/timelines1',
             name: 'timelines1',
-            component: () => import('../views/timelines1.vue')
+            component: () => import('../views/timelines.vue')
+        },
+        {
+            path: '/controlling',
+            name: 'controlling',
+            component: () => import('../views/controlling.vue')
+        },
+        {
+            path: '/keyframes',
+            name: 'keyframes',
+            component: () => import('../views/keyframes.vue')
+        },
+        {
+            path: '/keyframes1',
+            name: 'keyframes1',
+            component: () => import('../views/keyframes1.vue')
+        },
+        {
+            path: '/keyframes2',
+            name: 'keyframes2',
+            component: () => import('../views/keyframes2.vue')
+        },
+        {
+            path: '/svg1',
+            name: 'svg1',
+            component: () => import('../views/svg1.vue')
         }
+
     ]
 })
 
