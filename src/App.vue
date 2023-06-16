@@ -13,7 +13,7 @@ const handleRouterGo = (item) => {
     <div class="app-box">
         <div class="app-sidebar">
             <ul>
-                <li v-for="(item,index) in routerList" :key="item.name" @click="handleRouterGo(item)">
+                <li v-for="(item) in routerList" :key="item.name" @click="handleRouterGo(item)">
                     {{ item.name}}
                 </li>
             </ul>
@@ -29,7 +29,9 @@ const handleRouterGo = (item) => {
     display: flex;
 
     .app-context {
+        height: 100vh;
         flex: 1;
+        overflow: auto;
     }
 
     .app-sidebar {
@@ -38,6 +40,7 @@ const handleRouterGo = (item) => {
         height: 100%;
         color: #e3e3e3;
         padding: 12px;
+        overflow: auto;
 
         ul {
             list-style: none;

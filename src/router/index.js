@@ -1,4 +1,4 @@
-import {createRouter, createWebHistory, createWebHashHistory} from 'vue-router'
+import {createRouter, createWebHistory} from 'vue-router'
 import HomeView from '../views/home.vue'
 
 const router = createRouter({
@@ -21,6 +21,11 @@ const router = createRouter({
             path: '/userScroll1',
             name: 'userScroll1',
             component: () => import('../views/useScrollTrigger1.vue')
+        },
+        {
+            path: '/timelines1',
+            name: 'timelines1',
+            component: () => import('../views/timelines1.vue')
         }
     ]
 })
