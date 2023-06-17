@@ -10,7 +10,7 @@ onMounted(() => {
 
 <template>
     <div class="keyframes">
-        <!--        <div class="box" :ref="boxes" v-for="i in 3" :key="i"></div>-->
+        <div class="box" :ref="boxes" v-for="i in 3" :key="i"></div>
     </div>
 </template>
 
