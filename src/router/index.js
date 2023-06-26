@@ -33,6 +33,11 @@ const router = createRouter({
             component: () => import('../views/useScrollTrigger3.vue')
         },
         {
+            path: '/userScroll4',
+            name: 'userScroll4',
+            component: () => import('../views/useScrollTrigger4.vue')
+        },
+        {
             path: '/timelines1',
             name: 'timelines1',
             component: () => import('../views/timelines.vue')

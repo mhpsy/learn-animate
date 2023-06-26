@@ -22,8 +22,8 @@ onMounted(() => {
     // svgTextElement.setAttribute("lengthAdjust", "spacingAndGlyphs");// 文本长度调整
     //"spacing"：根据给定的文本长度来调整字母之间的间距，使文本长度与给定的长度相匹配。
     // "spacingAndGlyphs"：同时调整字母之间的间距和字母的形状，使文本长度与给定的长度相匹配。
-    svgTextElement.textContent = "11111111";
-    // svgTextElement.textContent = "1";
+    // svgTextElement.textContent = "22222";
+    svgTextElement.textContent = "1";
     svgEl.appendChild(svgTextElement);
 
 })

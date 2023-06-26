@@ -9,24 +9,7 @@ const box = (el) => {
 
 
 onMounted(() => {
-    gsap.to(boxes.value, {
-        // x: 100,// 水平移动
-        // y: 100,// 垂直移动
-        // rotation: 360,// 旋转
-        // skewX: -45,// 水平倾斜
-        // skewX: 45,// 水平倾斜
-        // skewY: 45,// 垂直倾斜 如果同时设置水平和垂直倾斜，同样的值，会出现不同的效果
-        // scale: .2,// 缩放
-
-        // x: "+=100",
-        // x: (i) => {
-        //     return i * 100
-        // },//第一个元素移动0px，第二个元素移动100px，第三个元素移动200px
-
-        // x: '40vw',
-
-        // y: () => window.innerHeight / 2,
-
+    gsap.from(boxes.value, {
         x: 100,
         y: 100,
         stagger: .5,// 间隔时间 //多个元素的动画，间隔时间
@@ -49,7 +32,8 @@ onMounted(() => {
 
 <template>
     <div class="con">
-        <div v-for="i in 5" :key="i" :ref="box" class="box"></div>
+        <div :ref="box" class="box"></div>
+        <!--        <div v-for="i in 5" :key="i" :ref="box" class="box"></div>-->
     </div>
 </template>
 
